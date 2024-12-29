@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        display: grid;
+        /* border: 1px solid; */
+        grid-template-areas:
+        "nav nav nav nav"
+        "head head head head"
+        "section section aside aside"
+        "footer footer aside aside"
+    }
+    .child-1{
+        border: 1px solid;
+        grid-area: nav;
+        background-color: red;
+    }
+    .child-2{
+        border: 1px solid;
+        grid-area: head; 
+        border-color: brown; 
+    }
+    .child-3{
+        border: 1px solid;
+        grid-area: section;
+        background-color: aqua;
+    }
+    .child-4{
+        border: 1px solid;
+        grid-area: aside;
+        background-color: lightcyan;
+    }
+    .child-5{
+        border: 1px solid;
+        grid-area: footer;
+        background-color: lightpink;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <div  class="parent">
+        <h1 class="child-1">nav</h1>
+        <h1 class="child-2">head</h1>
+        <h1 class="child-3">section</h1>
+        <h1 class="child-4" style="text-align: center;">aside</h1>
+        <h1 class="child-5">footer</h1>
+    </div>
+</body>
+</html>

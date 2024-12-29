@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
-        .s{
-            margin-top: 100px;
-            margin-left: 400px;
-            color: white;
-            font-size: 100px;
-            font-style:initial;
+        *{
+            margin: 0%;
         }
-        nav{
+        .s {
+            margin-top: 100px;
+            margin-left: 480px;
+            color: white; 
+            font-size: 100px;
+            font-style: initial;
+        }
+
+        nav {
             background-color: rgb(90, 89, 89);
             width: 100%;
             height: 40px;
-           
+
         }
-        nav:hover{
-            background-color:black;
+
+        nav:hover {
+            background-color: black;
         }
-        a{
+
+        a {
             text-decoration: none;
-            color: white;
             font-size: 40px;
             padding: 10px;
+            color: black;
         }
-        .f{
-            border:solid black;
+
+        .f {
+            border: solid black;
             width: 300px;
             height: 30px;
             color: white;
@@ -37,30 +46,175 @@
             top: 100%;
             left: 2%;
         }
-    </style> 
-    <body> 
-</head>
-<nav style="text-align: left;">
-    <a href="#home">Home</a>
-    <a href="">Menu</a>
-    <a href="">About</a>
-    <a href="">Contact</a>
-    <header class="s">THIN <br>CRUST<br> PIZZA</header>
-</nav>
-<!-- <section id="home"> -->
-    <!-- <p>home</p> -->
-<!-- </section> -->
-<!-- <h1>Lets See The Menu</h1> -->
-<div style="background-image: url(https://www.w3schools.com/w3images/pizza.jpg); background-size: cover; width: 100%; height: 700px;"></div>
-<section id="about">
-    <article style="background-color: lightcoral;">
-        <h1 style="text-align: center;">About</h1>
-        <p>
-            The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br>commodo consequat<br>.
-            The Chef? Mr. Italiano himself
-        </p>
-    </article>
-    <h1 class="f">Open From 10AM to 10PM</h1>
-</section>
-</body> 
+
+        .ta {
+            border: 5px solid black;
+        }
+
+        .parent-1 {
+            border: solid;
+            width: 300px;
+            height: 50px;
+            text-align: center;
+            margin-right: 60%;
+        }
+
+        .main {
+            border: solid;
+            margin-left:110px;
+            width: 80vw;
+            height: 500px;
+            overflow: hidden;
+            display: block;
+        }
+
+        .parent-2{
+            width: 80vw;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .sas {
+            border: 1px solid;
+            width: 310px;
+            color: white;
+        }
+
+        img {
+            text-align: center;
+            width: 600px;
+            height: 500px;
+            margin-left: 300px;
+        }
+
+        .my-element {
+            justify-content: center;
+            margin:10px;
+            animation:flip;
+            animation-duration: 20s;
+        }
+
+        .back {
+            background-color: black;
+            color: white;
+        }
+
+        .me {
+            position: absolute;
+            top: 700px;
+            left: 400px;
+            border: 5px solid;
+            background-color: black;
+            font-family: cursive;
+        }
+
+        .tie-1 {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            margin-left: 10px;
+        }
+
+        .time {
+            color: white;
+        }
+
+        .map {
+            img {
+                width: 100%;
+                margin: 0%;
+            }
+        }
+
+        .res{
+            margin-left: 300px;
+            size: 100px;
+        }
+        .bot{
+            margin: 0%;
+        }
+        #bu{
+            margin-left: 500px;
+        }
+        .parent-2:hover{
+            background-color: orangered;
+        }
+    </style>
+
+<body>
+    </head>
+    <div class="my-element" style="text-align: center;">
+        <h1>WELCOME🍕🍕🍕</h1>
+    </div>
+    <nav style="text-align: left;">
+        <a href="#home" style="color: white;">Home</a>
+        <a href="#menu" style="color: white;">Menu</a>
+        <a href="#about" style="color: white;">About</a>
+        <a href="#contact" style="color: white;">Contact</a>
+        <header class="s">THIN <br>CRUST<br> PIZZA</header>
+    </nav>
+    <div  style="background-image: url(https://www.w3schools.com/w3images/pizza.jpg); background-size: cover; width: 100%; height: 700px;" id="home">
+    </div>
+    <div class="me"><a href="#menu" style="color: white;">LET ME SEE THE MENU</a></div>
+    <div class="back">
+        <h1 style="text-align: center;">THE MENU</h1>
+        <h1 style="text-align: center;">WELCOME TO THE CRUST PIZZA SHOP 🍕🍕🍕</h1>
+        <div class="main">
+            <div class="parent-2" id="menu">
+                <a href="pizza.html" target="some" class="sas" id="are" style="background-color: orangered;">Pizza</a>
+                <a href="saladas.html" target="some" class="sas">saladas</a>
+                <a href="Starters.html" target="some" class="sas">staters</a>
+            </div>
+            <div>
+                <iframe src="pizza.html" frameborder="0" name="some" height="450px" width="102%"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="bot">
+        <section id="about">
+            <article style="background-color: rgb(108, 58, 58);">
+                <h1 style="text-align: center;">About</h1>
+                <h1 class="f">Open From 10AM to 10PM</h1>
+                <p>
+                    The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br>commodo
+                    consequat<br>.
+                    The Chef? Mr. Italiano himself
+                </p>
+                <img src="task.jpg">
+                <h1 style="color: white; margin-left: 10px;">OPENING HOURS</h1>
+                <div class="time">
+                    <div class="tie-1">
+                        <p>MON&TUES CLOSED🔐</p>
+                        <p>WEDNESDAY 10:00-24:00</p>
+                        <p>THRUSDAY 10:00-24:00</p>
+                        <p>FRIDAY 10:00-24:00</p>
+                        <p>SATURDAY 10:00-24:00</p>
+                        <p>SUNDAY CLOSE🔐</p>
+                    </div>
+                    </div>
+                </div>
+            </article>
+            <div class="map">
+                <img src="https://www.w3schools.com/w3images/map.jpg">
+            </div>
+        <!-- </section>
+        <section > -->
+        <div class="tact"  id="contact"style="background-color: lightslategray;">    
+            <h1 style="text-align: center;">Contact</h1>
+            <p>Find us at some address at some place or call us at 05050515-122330<br>
+
+                FYI! We offer full-service catering for any event, large or small. We understand your needs and we will
+                cater the food to satisfy the biggerst<br> criteria of them all, both look and taste.<br>
+
+                Reserve a table, ask for today's special or just send us a message:</p>
+                <div class="res">
+           <p> <input type="text" placeholder="name"></br></p>
+           <p> <input type="number" placeholder="How many people"><br></p>
+           <p> <input type="date" placeholder="25-12-24"><br></p>
+           <p> <input type="text" placeholder="message/special requriments"></p>
+           </div>
+        </div>
+</body>
 </html>

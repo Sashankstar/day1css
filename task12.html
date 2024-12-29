@@ -1,16 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+<style>
+    .main {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 99.1%;
+        background-color: lightcyan;
+        top: 0%;
+    }
+
+    .img1 {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        margin-left: 0%;
+        column-gap: 10px;
+    }
+
+    /* p {
+        text-align: center;
+    } */
+
+    .anc {
+        justify-content: center;
+        word-spacing: 20px;
+        display: flex;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 10px;
+        padding: 10px;
+        color: black;
+    }
+
+    a:hover {
+        background-color: black;
+        color: #fff;
+
+    }
+
+    /* .f1{
+        display: grid;
+    }
+    .f2{
+        display: grid; */
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+    }
+    .f2-1{
+        display: flex;
+    }
+    .f3-1{
+        display:flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+</style>
+
 <body>
-    <div class="Parent-1">
-    <nav>
-        <h1>
+    <div class="main">
+        <div class="Parent-1" style="font-size: 200%;">
             <i class="fa-solid fa-bars"></i>
-        </h1>
-    </nav>
+        </div>
+        <div class="Parent-2">
+            <p>My Food</p>
+        </div>
+        <div class="parent-3">
+            <p>Mail</p>
+        </div>
+    </div>
+    <div class="main2" id="i">
+        <div class="img1">
+            <div class="content1">
+                <img src="sandwich.jpg" style="height: 400px;" width="300px">
+                <h2 style="text-align: center;">The Perfect Sandwich,A Real NYC Classic</h2>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="img1">
+                <div class="content1">
+                    <img src="steak.jpg" style="height: 400px;" width="300px">
+                    <h2 style="text-align: center;">Let Me Tell You About This Steak</h2>
+                    <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum
+                        lipsum.</p>
+                </div>
+                <div class="img1">
+                    <div class="content1">
+                        <img src="cherries.jpg" style="height: 400px;" width="300px">
+                        <h2 style="text-align: center;">Cherries, interrupted</h2>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum</p>
+                        <p style="text-align: center;">what else?</p>
+                    </div>
+                    <div class="img1">
+                        <div class="content1">
+                            <img src="wine.jpg" style="height: 400px;" width="300px">
+                            <h2 style="text-align: center;">Once Again, Robust Wine and Vegetable Pasta</h2>
+                            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main3" id="i">
+        <div class="img1">
+            <div class="content1">
+                <img src="popsicle.jpg" style="height: 400px;" width="300px">
+                <h2 style="text-align: center;">All I Need Is a Popsicle</h2>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="img1">
+                <div class="content1">
+                    <img src="salmon.jpg" style="height: 400px;" width="300px">
+                    <h2>Salmon For Your Skin</h2>
+                    <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum
+                        lipsum.</p>
+                </div>
+                <div class="img1">
+                    <div class="content1">
+                        <img src="sandwich.jpg" style="height: 400px;" width="300px">
+                        <h2 style="text-align: center;">The Perfect Sandwich, A Real Classic</h2>
+                        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                    <div class="img1">
+                        <div class="content1">
+                            <img src="croissant.jpg" style="height: 400px;" width="300px">
+                            <h2 style="text-align: center;">Le French</h2>
+                            <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="anc">
+           <p claas="sas"><a href="#i"> << </a></p>
+            <p claas="sas"><a href="#i">1</a></p>
+            <p claas="sas"><a href="#i">2</a></p>
+            <p claas="sas"><a href="#i">3</a></p>
+            <p claas="sas"><a href="#i">4</a></p>
+            <p claas="sas"><a href="#i">>></a></p>
+        </div><hr>
+    </div>
+    <h1 style="text-align: center;">About Me,The Food Man</h1>
+    <div class="img 3">
+        <div class="content 2" style="text-align: center;">
+            <img src="chef.jpg">
+            <p>I am Who I Am!</p>
+            <p>With Passion For Real, Good Food</p>
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of
+                lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus
+                ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                congue gravida diam non fringilla.</p>
+        </div><hr>
+    </div>
+    <footer>
+        <div class="f1">
+            <h1>FOOTER</h1>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                congue gravida diam non fringilla</p>
+        </div>
+        <div class="f2">
+            <h1>BLOG POSTS</h1>
+            <div class="f2-1">
+            <img src="workshop.jpg" style="height: 50px;width: 50px;">
+            <p id="d">Lorem<br>
+            Sed mattis nun</p>
+            </div>
+            <div class="f2-1">
+            <img src="gondol.jpg" style="height: 50px; width: 50px;">
+            <p id="d">Ipsum<br>
+                Praes tinci sed</p>
+                </div>
+        </div>
+        <div class="f3">
+            <h1>POPULAR TAGS</h1>
+            <div class="f3-1">
+                <p>Travel</p>
+                <p>New work</p>
+                <p>Dinner</p>
+                <p>Salmon</p>
+                <p>France</p>
+                <p>Drinks</p>
+                <p>Ideas</p>
+                <p>Flavor</p>
+                <p>Cusine</p>
+                <p>Chicken</p>
+                <p>Dressing</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
